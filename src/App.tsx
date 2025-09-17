@@ -8,6 +8,9 @@ import { AuthorityLayout } from "@/components/layout/AuthorityLayout";
 import { Login } from "@/pages/Login";
 import { Dashboard } from "@/pages/Dashboard";
 import { Incidents } from "@/pages/Incidents";
+import { Heatmap } from "@/pages/Heatmap";
+import { DigitalIds } from "@/pages/DigitalIds";
+import { OperatorConsole } from "@/pages/OperatorConsole";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -87,9 +90,9 @@ const App = () => (
               <Route path="dashboard" element={<Dashboard />} />
               <Route path="incidents" element={<Incidents />} />
               <Route path="incidents/:id" element={<div className="p-6">Incident Detail Page - Coming Soon</div>} />
-              <Route path="heatmap" element={<div className="p-6">Risk Heatmap - Coming Soon</div>} />
-              <Route path="digital-ids" element={<div className="p-6">Digital ID Verification - Coming Soon</div>} />
-              <Route path="operator" element={<div className="p-6">Emergency Console - Coming Soon</div>} />
+              <Route path="heatmap" element={<Heatmap />} />
+              <Route path="digital-ids" element={<DigitalIds />} />
+              <Route path="operator" element={<OperatorConsole />} />
               <Route path="zones" element={<div className="p-6">Zone Management - Coming Soon</div>} />
               <Route path="users" element={<div className="p-6">User Management - Coming Soon</div>} />
               <Route path="audit" element={<div className="p-6">Audit Logs - Coming Soon</div>} />
